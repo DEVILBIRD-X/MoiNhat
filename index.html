@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galaxy Battle</title>
+    <link rel="stylesheet" href="start.css">
+    <link rel="stylesheet" href="Chonman.css">
+    <link rel="stylesheet" href="TroChoiPhan.css"> <!-- Đường dẫn tới file CSS của game -->
+</head>
+<body>
+    <div id="main-content">
+        <!-- Phần trang chào mừng -->
+        <div class="start-screen">
+            <h1>Space Warrior</h1>
+            <button id="start-button">Start Game</button>
+        </div>
+        <!-- Phần chọn màn chơi World 1 (ban đầu ẩn đi) -->
+        <div class="world1-screen" style="display: none;">
+            <h2>World 1</h2>
+            <button class="level-button" data-level="1">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9E9hoC1Kic43nCcifhycc06UHamAf7LwKKg&usqp=CAU" alt="Button Image">
+                Level 1
+            </button>
+            <button class="level-button locked" data-level="2" disabled>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9E9hoC1Kic43nCcifhycc06UHamAf7LwKKg&usqp=CAU" alt="Button Image">
+                Level 2
+            </button>
+            <!-- Thêm các nút level khác nếu cần -->
+        </div>
+    </div>
+    <!-- Container cho trò chơi 3D -->
+    <div id="game-container" style="display: none;"></div>
+    <script src="start.js"></script>
+    <script src="Chonman.js"></script>
+    <script type="module" src="TroChoiPhan.js"></script> <!-- Đường dẫn tới file JavaScript của game -->
+</body>
+</html>
